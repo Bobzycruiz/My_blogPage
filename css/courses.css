@@ -152,8 +152,8 @@ nav ul li a span{
     /* margin-bottom:7rem; */
 }
 .pdf_card{
-    padding: 0 2%;
-    width: 200px;
+    padding: 0 4%;
+    width: 210px;
     height:250px;
     display: flex;
     align-items: center;
