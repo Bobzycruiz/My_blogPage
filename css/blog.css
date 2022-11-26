@@ -12,6 +12,7 @@ body{
     background-image: radial-gradient( ellipse farthest-corner at 30px 10px , #444cf7, #444cf7 50%,
     #e5e5f7 50%);
     background-size: 10px 10px;
+    Overflow-x:hidden;
 }
 a{
     cursor: pointer;
