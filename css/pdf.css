@@ -1,0 +1,214 @@
+body{
+    padding: 0 3%;
+
+opacity: 1;
+background-image: radial-gradient( ellipse farthest-corner at 30px 10px , #444cf7, #444cf7 50%,
+#e5e5f7 50%);
+background-size: 10px 10px;
+animation: fade 500ms 1 ease;
+}
+nav ul.links li a#mb{
+    padding-bottom: 2px;
+    border-bottom:  2px solid rgb(10, 255, 10);
+}
+section.bod{
+    margin: 30px auto;
+}
+.header h1{
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom:20px ;
+    border-bottom: 3px solid rgb(179, 255, 0);
+    width: 40%;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    text-align: center;
+    text-shadow: 1px 4px 3px rgb(84, 84, 84) ;
+    background: linear-gradient(65deg, rgba(255, 224, 224, .5), rgba(200, 251, 254, .5),rgba(243, 255, 197, .5));
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px;
+}
+.header{
+    border: none;
+}
+.divider{
+    border-bottom: 2px dotted black;
+    margin: 20px 0;
+}
+.pdfs{
+    padding: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+.pdfh h3{
+    padding: 3%;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'futuraMediumBT' !important;
+    width: 200px;
+    text-align: center;
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+    border-bottom: 3px solid rgb(179, 255, 0);
+    /* margin-bottom:7rem; */
+}
+.pdf_card{
+    padding: 0 2%;
+    width: 200px;
+    height:250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius:30px;
+    border-bottom-left-radius:10px;
+    /* border: 1px solid black;  */
+    flex-direction: column;
+    gap: 20px;
+    background-size: cover;
+    background: linear-gradient(75deg, rgb(234, 254, 255) ,rgb(235, 217, 217),rgb(254, 255, 216));
+    box-shadow: 2px 3px 6px rgb(66, 94, 66);
+    overflow-x: hidden;
+}
+.pdf_card:hover{
+    filter: brightness(115%);
+    box-shadow:3px 3.5px 8px rgb(1, 12, 1) ;
+    transition: 200ms all;
+    cursor: pointer;
+}
+
+.pdf_card p{
+    width: 180px;
+    text-align: center;
+    /* border: 2px solid black; */
+    padding: 0 2%;
+    margin: 2%;
+    font-family: serif;
+    font-size: 14px;
+    cursor: default;
+}
+.dsect{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.dsect a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: white;
+    background: #37ce09;
+    width: 140px;
+    padding: 8px 0px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;    
+}
+.dsect a:hover{
+    transform: scale(1.05);
+    background: rgb(1, 42, 1);
+    border-top-right-radius:25px ;
+    transition: 200ms all;
+}
+a span{
+    position: relative;
+    /* width: 1.5rem; */
+    /* visibility: hidden; */
+    padding: 2%;
+}
+a span:after{
+    content:'\21D3';
+    font-size: 20px;
+    position: absolute;
+    padding-left: 9px;
+    animation: down 500ms linear infinite;
+}
+@keyframes down{
+    from{
+    top: -10px;
+    opacity:0;
+    }
+    to{
+        top: 10px;
+        opacity:1;
+        }
+}
+/* responsiveness */
+
+@media only screen and (max-width:768px){
+    .header h1{
+
+        font-size: 35px;
+        width: 50%;
+    }
+}
+@media only screen and (max-width:668px){
+    .header h1{
+
+        font-size: 33px;
+    }
+}
+
+@media only screen and (max-width:550px){
+    .header h1{
+
+        font-size: 30px;
+        width: 55%;
+    }
+    .pdfs{
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width:450px){
+    .header h1{
+
+        font-size:28px;
+        width: 60%;
+        margin: 0;
+        padding: 5%;
+    }
+    .pdf_card h2{
+        font-size: 22px;
+    }
+    .dsect{
+        transform: scale(.9);
+    }
+}
+
+@media only screen and (max-width:380px){
+    .header h1{
+
+        font-size:25px;
+        width: 65%;
+        padding: 2% 5%;
+    }
+    .pdfs{
+        gap: 5px;
+    }
+    .pdf_card{
+        transform: scale(.95);
+    }
+}
+
+@media only screen and (max-width:320px){
+    .header h1{
+
+        font-size:24px;
+    }
+   
+}
+
+
+
+@keyframes fade{
+    0%{
+        opacity: .1;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 1;
+    }

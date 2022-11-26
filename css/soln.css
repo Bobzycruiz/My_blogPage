@@ -1,0 +1,775 @@
+:root{
+
+    --box-shadow01:
+    8px 8px 12px #4c4c4d,
+    2px 2px 10px #2c3136,
+    inset 2px 2px 3px #48494e,
+    inset -2px -2px 3px #37383a;
+
+    --box-shadow02:
+    10px 10px 12px #151618,
+    -10px -10px 12px #222529,
+    inset 8px 4px 8px #33353b,
+    inset -4px -4px 8px #151618;
+
+    --box-shadow03:
+    3px 3px 7px #151618,
+    -3px -4px 6px #2c3136,
+    inset -4px -4px 8px #33353b,
+    inset 4px 4px 8px #151618;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    overflow-x: hidden;
+
+    animation: fade 500ms 1 ease;
+}
+
+nav{
+    top: -10px;
+    position: sticky;
+    z-index: 9999;
+    display: flex;
+    /* border: 3px solid black; */
+    max-width: calc(100% - 15%);
+    height: 90px;
+    margin:auto;
+    padding: 1% 2%;
+    align-items: center;
+    justify-content:space-between;
+    background: rgb(7, 36, 1);
+    border-radius: 10px;
+}
+nav div h4{
+    color: white;
+    font-size: 20px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+
+nav h1 a{
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-family: 'futuraMediumBT' !important;
+    color: white;
+    background-position: center;
+    text-decoration: none;
+}
+nav ul li{
+    display: inline-flex;
+    list-style: none;
+    margin: 10px 20px;
+    text-transform: uppercase;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+nav ul li a:hover {
+color: rgb(19, 112, 0);
+transition: 300ms ease;
+}
+nav ul li a span{
+    text-transform: lowercase;
+    font-style: italic;
+}
+
+ section.main{
+    padding: 5%;
+    background-color: #ececec;
+    background: linear-gradient(to bottom, rgb(245, 245, 245), rgb(210, 230, 231));
+ }
+ section.main h1{
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom:20px ;
+    border-bottom: 3px solid rgb(179, 255, 0);
+    width: 30%;
+    margin-bottom: 50px;
+}
+.course_embed{
+    justify-content: center;
+    /* margin: 0 auto; */
+    text-align: center;
+    padding: 1%;
+
+    /* background-color: red; */
+}
+ .header{
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    border-bottom:2px dotted black ;
+ }
+ .header h1{
+    margin-left: auto;
+    margin-right: auto;
+ }
+ .header .img .dark{
+    width:100%;
+    background:linear-gradient(to bottom, rgba(0,0,0,.9) 75%,rgba(65, 206, 0, 0.9));
+    border-radius: 20px;
+ }
+ .header .img{
+    width: 80%;
+    /* min-height: 300px; */
+    margin-left: auto;
+    margin-right: auto;
+
+
+ }
+ .header .img img{
+    border-radius: 20px;
+    width: 100%;
+    max-height: 350px;
+    height: 80%;
+    opacity: .65;
+    object-fit: cover;
+ }
+ /* .header button{
+    padding: 15px;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(208, 214, 191));
+ }
+ .header button:hover{
+    background: black;
+    border-color: transparent;
+    transition: 300ms ease-in;
+ }
+ .header button h2 a{
+    text-decoration: none;
+    color: rgb(24, 23, 23);
+ }
+ .header button h2 a:hover{
+    color: white;
+    transition: 300ms ease-in;
+} */
+/* scroll effect///////////////////////// */
+.float{
+    margin-top:-35px;
+    display:flex;
+    /* border: 2px solid black; */
+    justify-content: center;
+    align-content: center;
+    width: 80%;
+    margin: auto;
+}
+.float button{
+    position: relative;
+    background: linear-gradient(75deg, rgb(234, 254, 255) ,rgb(235, 217, 217),rgb(254, 255, 216));
+    min-height: 60px;
+    margin: 60px auto 30px auto ;
+    padding: 10px;
+    border-radius: 5px;
+    border:none;
+    background-color: #acacac;
+    box-shadow: 2px 4px 6px rgb(66, 94, 66);
+    /* width: 80%; */
+}
+.float button:hover{
+    background: black;
+    border-color: transparent;
+    transition: 300ms ease-in;
+ }
+.float button h2 a{
+    /* font-family: 'Roboto' !important; */
+    font-family: 'futuraMediumBT' !important;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: rgb(1, 19, 4);
+}
+.float button h2 a:hover{
+    color: white;
+    transition: 300ms ease-in;
+}
+.float .mar1{
+    position: relative;
+    background: linear-gradient(75deg, rgb(234, 254, 255) ,rgb(235, 217, 217),rgb(254, 255, 216));
+    min-height: 60px;
+    margin: 60px auto 30px auto ;
+    border-radius: 5px;
+    width: 80%;
+    box-shadow: 1px 2px 3px rgb(66, 94, 66);
+}
+.mar1, mar1 *{
+    overflow: hidden;
+}
+.mar3{
+    white-space: nowrap;
+    font-family: 'futuraMediumBT' !important;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.mar2{
+    position: absolute;
+    right: -100%;
+    animation: scroll linear 15s infinite;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    line-height: 60px;
+    cursor: pointer;
+}
+@keyframes scroll {
+    from{
+        right: -100%;
+    }
+    to{
+        right: 100%;
+    }
+}
+/* scroll effect*/
+
+
+.outro{
+    padding: 4%;
+    /* background: rgb(12, 12, 12); */
+    /* border-top: 2px solid rgba(44, 44, 44, 0.116); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+.outro .icons{
+    padding-left: 15%;
+}
+.outro .icons .btn{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+
+    background: rgb(51, 51, 51);
+    box-shadow: 0 5px 15px -5px rgb(0, 0, 0);
+    margin:10px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    color: rgb(101, 255, 30);
+}
+.icons .btn i {
+    position: relative;
+    z-index: 4;
+    line-height: 60px;
+    font-size: 20px;
+    padding-left: 12px;
+    transition: 300ms ease-in-out;
+}
+.outro .icons .btn::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: linear-gradient(#27b902, #0e4400 );
+    transform: rotate(45deg);
+    left: -110%;
+    top:90%;
+}
+.outro .icons .btn:hover{
+    color: rgb(255, 208, 0);
+    transform: scale(1.2);
+}
+.outro .icons .btn:hover::before {
+    animation: onHover 0.7s 1;
+    left: -10%;
+    top: -10%;
+}
+.footer{
+    display: flex;
+    background: rgb(0, 0, 0);
+    padding: 1%;
+    justify-content: space-between;
+}
+.footer ul{
+display: flex;
+list-style: none;
+padding: 1% 6%;
+}
+.footer ul li#ext-link{
+    color: rgb(126, 117, 134);
+    font-weight: bold;
+}
+.footer ul li{
+    font-size: 13px;
+    padding: 12px;
+    color: rgb(126, 117, 134);
+}
+.left_footer p{
+    text-align: right;
+    font-size: 12px;
+    padding-right:50px;
+
+    line-height: 25px;
+    color: rgb(164, 150, 177);
+}
+.footer ul li:hover{
+    color: #02489e;
+    transition: 300ms ease-in-out;
+}
+@keyframes onHover {
+    0%{
+        left:-110%;
+        top: 90%;
+    }
+    50%{
+        left: 10%;
+        top: -30%;
+    }
+    100%{
+        top: -10%;
+        left: -10%;
+    }
+}
+section.nil{
+    display: none;
+}
+/* ................... */
+
+
+
+
+
+
+
+
+header.body{
+    display: none;
+    margin: auto;
+}
+
+.body{
+    max-width: calc(100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding: 4%;
+    background-color: rgb(17, 68, 6);
+}
+.body h1{
+    font-size: 25px;
+    color: white;
+    
+}
+.left-hearder input[type="checkbox"]{
+    display: none;
+}
+.left-hearder label i{
+    color: white;
+    font-size: 20px;
+}
+/* responsivenessssss///// */
+
+@media only screen and (max-width:1080px){
+    section.main h1{
+        width: 40%;
+    }
+    
+}
+@media only screen and (max-width:1024px){
+ 
+    
+    nav{
+        max-width: calc(100% - 10%);
+        margin:-5px auto auto auto;
+    }
+    nav div h4{
+        font-size: 18px;
+        padding-bottom: 10px;
+        padding-top: 12px;
+    }
+    nav h1 a{
+        font-size: 35px;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+    }
+    nav ul li{
+        margin: 10px 15px;
+    }
+
+    @keyframes scroll {
+        from{
+            right: -120%;
+        }
+        to{
+            right: 100%;
+        }
+    }
+
+
+}
+@media only screen and (max-width:900px){
+
+     section.main h1{
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+     .header .img{
+        width: 85%;
+    
+     }
+     .float .mar1{
+        margin: 60px 10px 30px auto ;
+    }
+    .float button{
+        padding: 8px;
+    }
+    .float button h2 a{
+        font-size: 18px;
+    }
+
+}
+@media only screen and (max-width:768px){
+
+    section.main h1{
+       font-size: 28px;
+       margin-bottom: 35px;
+   }
+
+    .header .img{
+       width: 90%;
+    }
+
+   .float button{
+       width: 120px;
+   }
+   .float button h2 a{
+       font-size: 17px;
+   }
+
+
+   .outro{
+            display: flex;
+            flex-direction: column;
+        }
+        
+    
+        .footer ul li{
+            line-height: 3px;
+            font-size: 10px;
+            padding-left: 0px;
+        }
+
+   .footer ul{
+    flex-direction: column;
+}
+.footer .left_footer{
+    text-align: right;
+    align-self: flex-end;
+    padding: 1% 0;
+}
+.left_footer p{
+    padding-right: 8px;
+}
+
+@keyframes scroll {
+    from{
+        right: -210%;
+    }
+    to{
+        right: 100%;
+    }
+}
+
+}
+
+@media only screen and (max-width:660px){
+ nav{
+    display: none;
+ }
+      
+ header.body{
+    display: flex;
+ }
+ .body h1{
+    font-size: 20px;
+ }
+
+section.nil .left-hearder label i{
+    display: flex;
+}
+
+.left-hearder ul a{
+    color: white;
+}
+
+
+.left-hearder #show-menu:checked ~ label i::before{
+    content: "\f00d";
+}
+
+header.body{
+    top: 0;
+    position: sticky;
+    z-index: 99998;
+    width: calc(100% - 20%);
+    margin: auto;
+    border-radius: 5px;
+    background-color: #082601;
+}
+.left-hearder ul.links{
+    list-style-type: none;
+    position: fixed;
+    flex-direction: column;
+    gap: 15px;
+    top: 75px;
+    right:-130%;
+    width: 100%;
+    max-width: 250px;
+    padding: 4%;
+    height: 100%;
+    border-radius: 5px;
+    text-align: left;
+    /* background-color: rgb(0, 0, 0); */
+    border-left: 2px dotted rgb(170, 255, 100);
+    background: linear-gradient(75deg, rgb(234, 254, 255) ,rgb(235, 217, 217),rgb(254, 255, 216));
+    transition: 300ms ease;
+    z-index: 99999;
+
+}  
+
+.left-hearder #show-menu:checked ~ ul.links{
+    right: 0;
+    box-shadow: 0 0 0 100vw rgba(0,0,0,.25);
+}
+
+.left-hearder ul.links li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family:'Poppins', sans-serif;
+    color: rgb(2, 42, 5);
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+.left-hearder ul.links ul li a{
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 10%;
+    font-style: oblique;
+}
+.left-hearder ul.links ul{
+    list-style-type: none;
+}
+.left-hearder ul.links ul li a:hover{
+    font-size: 20px;
+    transition: 200ms;
+    color:#000000;
+}
+.left-hearder ul.links li a:hover{
+    font-size: 22px;
+    transition: 200ms;
+    color:#000000;
+}
+
+
+    .outro .icons .btn{
+        height: 35px;
+        width: 35px;
+        margin-top: 30px;
+    }
+    .outro .icons i{
+        line-height: 35px;
+        padding-left: 6px;
+    }
+    section.main h1{
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+
+
+    .float{
+        margin-top:-35px;
+        width: 90%;
+    }
+    .float button{
+        min-height: 50px;
+        margin: 60px auto 30px 10px ;
+    }
+   
+    .float .mar1{
+         min-height: 50px;
+    }
+    .mar3{
+        font-size: 17px;
+    }
+
+}
+
+
+@media only screen and (max-width:480px){
+    .body h1{
+        font-size: 18px;
+    }
+    section.main h1{
+        font-size: 22px;
+        padding-bottom: 10px;
+        width: 50%;
+    }
+    .float{
+        margin-top:-40px;
+        width: 92%;
+    }
+    .float button{
+        max-height: 40px;
+        padding: 1%;
+        width: 130px;
+        font-size: 14px;
+    }
+   
+    .float .mar1{
+         min-height: 40px;
+    }
+    .mar3{
+        font-size: 16px;
+    }
+    .left-hearder ul.links{
+        top: 55px;
+        width: 100%;
+        max-width: 220px;
+    
+    }  
+    .outro h2{
+        font-size: 20px;
+    }
+    @keyframes scroll {
+        from{
+            right: -400%;
+        }
+        to{
+            right: 100%;
+        }
+    }
+}
+
+
+
+@media only screen and (max-width:380px){
+    .body h1{
+        font-size: 15px;
+    }
+    section.main h1{
+        font-size: 20px;
+        width: 55%;
+    }
+    .float button{
+        max-height: 35px;
+        padding: 1%;
+        width: 120px;
+    }
+   .float button h2 a{
+    font-size: 13px;
+   }
+    .float .mar1{
+         min-height: 40px;
+    }
+    .mar3{
+        font-size: 14px;
+    }
+    .left-hearder ul.links{
+        top: 50px;
+        max-width: 200px;
+    }  
+    .outro .icons .btn{
+        height: 35px;
+        width: 35px;
+        margin: 40px 4px 20px 4px;
+    }
+    .outro .icons i{
+        line-height: 35px;
+        padding-left: 6px;
+        font-size: 18px;
+    }
+    @keyframes scroll {
+        from{
+            right: -470%;
+        }
+        to{
+            right: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width:320px){
+    .body h1{
+        font-size: 14px;
+    }
+    section.main h1{
+        font-size: 19px;
+        width: 65%;
+    }
+    .float button{
+        max-height: 30px;
+        height: 100%;
+    }
+    .float .mar1{
+         min-height: 30px;
+    }
+    .left-hearder ul.links{
+        top: 45px;
+        max-width: 180px;
+    }  
+    .left-hearder ul.links li a{
+        font-size:16px;
+    }
+    .left-hearder ul.links ul li a{
+        font-size: 15px;
+    }
+    .outro .icons .btn{
+        height: 30px;
+        width: 30px;
+        margin: 30px 3px 15px 3px;
+    }
+    .outro .icons i{
+        line-height: 35px;
+        padding-left: 6px;
+        font-size: 15px;
+    }
+    .footer ul li{
+        line-height: 11px;
+    }
+    @keyframes scroll {
+        from{
+            right: -550%;
+        }
+        to{
+            right: 100%;
+        }
+    }
+}
+@media only screen and (max-width:280px){
+    .outro .icons .btn{
+        height: 30px;
+        width: 30px;
+        margin: 25px 1px 14px 1px;
+    }
+    .outro .icons i{
+        line-height: 30px;
+        padding-left: 5px;
+        font-size: 14px;
+    }
+
+    .left-hearder ul.links{
+        top: 40px;
+    }
+}
+@keyframes fade{
+    0%{
+        opacity: .1;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 1;
+    }

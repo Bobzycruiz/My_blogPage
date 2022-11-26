@@ -1,0 +1,536 @@
+:root{
+
+    --box-shadow01:
+    8px 8px 12px #4c4c4d,
+    2px 2px 10px #2c3136,
+    inset 2px 2px 3px #48494e,
+    inset -2px -2px 3px #37383a;
+
+    --box-shadow02:
+    10px 10px 12px #151618,
+    -10px -10px 12px #222529,
+    inset 8px 4px 8px #33353b,
+    inset -4px -4px 8px #151618;
+
+    --box-shadow03:
+    3px 3px 7px #151618,
+    -3px -4px 6px #2c3136,
+    inset -4px -4px 8px #33353b,
+    inset 4px 4px 8px #151618;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    overflow-x: hidden;
+    background: linear-gradient(to bottom, rgb(234, 254, 255) ,rgb(235, 217, 217));
+
+    animation: fade 500ms 1 ease;
+}
+.fix{
+    top: -10px;
+    position:sticky;
+    z-index: 9999;
+    width: 100%;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, rgb(234, 254, 255) ,rgb(235, 217, 217));
+}
+nav{
+    display: flex;
+    /* border: 3px solid black; */
+    max-width: calc(100% - 15%);
+    height: 90px;
+    margin:-10px auto auto auto;
+    padding: 1% 2%;
+    align-items: center;
+    justify-content:space-between;
+    background: rgb(7, 36, 1);
+    border-radius: 10px;
+}
+nav div h3{
+    color: white;
+    font-size: 20px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+nav h1 a, nav h1 a#chmh1, nav h1 a#phyh1, nav h1 a#gst, nav h1 a#cpeh1, nav h1 a#mthh1  {
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-family: 'futuraMediumBT' !important;
+    color: white;
+    background-position: center;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px rgb(90, 90, 90);
+}
+nav ul li{
+    display: inline-flex;
+    list-style: none;
+    margin: 10px 20px;
+    text-transform: uppercase;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+nav ul li a:hover {
+color: rgb(19, 112, 0);
+transition: 500ms ease;
+}
+nav ul li a span{
+    text-transform: lowercase;
+    font-style: italic;
+}
+.outline{
+    padding: 2% 7%;
+    /* background-color: red; */
+}
+.outline h3{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'futuraMediumBT' !important;
+    width: 200px;
+    text-align: center;
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+    border-bottom: 3px solid rgb(179, 255, 0);
+}
+.outline ul li{
+    padding: 1% 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    width: 280px;
+}
+.grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: auto auto; */
+    grid-gap:10px ;
+    /* border: 2px solid black; */
+    padding: 2%;
+}
+
+.embed{
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    height: 0;
+    overflow: hidden;
+    align-self: center;
+}
+.embed .iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    /* border: 2px solid black; */
+}
+.pdfs{
+    padding: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+.pdfh h3{
+    padding: 3%;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'futuraMediumBT' !important;
+    width: 200px;
+    text-align: center;
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+    border-bottom: 3px solid rgb(179, 255, 0);
+    /* margin-bottom:7rem; */
+}
+.pdf_card{
+    padding: 0 2%;
+    width: 200px;
+    height:250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius:30px;
+    border-bottom-left-radius:10px;
+    /* border: 1px solid black;  */
+    flex-direction: column;
+    gap: 20px;
+    background-size: cover;
+    background: linear-gradient(75deg, rgb(234, 254, 255) ,rgb(235, 217, 217),rgb(254, 255, 216));
+    box-shadow: 2px 3px 6px rgb(66, 94, 66);
+    overflow-x: hidden;
+}
+.pdf_card:hover{
+    filter: brightness(115%);
+    box-shadow:3px 3.5px 8px rgb(1, 12, 1) ;
+    transition: 200ms all;
+    cursor: pointer;
+}
+.dsect{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.dsect a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: white;
+    background: #37ce09;
+    width: 140px;
+    padding: 8px 0px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;       
+}
+.dsect a:hover{
+    transform: scale(1.05);
+    background: rgb(1, 42, 1);
+    border-top-right-radius:25px ;
+    transition: 200ms all;
+}
+a span{
+    position: relative;
+    /* width: 1.5rem; */
+    /* visibility: hidden; */
+    padding: 2%;
+}
+a span:after{
+    content:'\21D3';
+    font-size: 20px;
+    position: absolute;
+    padding-left: 9px;
+    animation: down 500ms linear infinite;
+}
+.outro{
+    padding: 4%;
+    /* background: rgb(12, 12, 12); */
+    /* border-top: 2px solid rgba(44, 44, 44, 0.116); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+.outro .icons{
+    padding-left: 15%;
+}
+.outro .icons .btn{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+
+    background: rgb(51, 51, 51);
+    box-shadow: 0 5px 15px -5px rgb(0, 0, 0);
+    margin:10px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    color: rgb(101, 255, 30);
+}
+.icons .btn i {
+    position: relative;
+    z-index: 4;
+    line-height: 60px;
+    font-size: 20px;
+    padding-left: 12px;
+    transition: 300ms ease-in-out;
+}
+.outro .icons .btn::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: linear-gradient(#27b902, #0e4400 );
+    transform: rotate(45deg);
+    left: -110%;
+    top:90%;
+}
+.outro .icons .btn:hover{
+    color: rgb(255, 208, 0);
+    transform: scale(1.2);
+}
+.outro .icons .btn:hover::before {
+    animation: onHover 0.7s 1;
+    left: -10%;
+    top: -10%;
+}
+.footer{
+    display: flex;
+    background: rgb(0, 0, 0);
+    padding: 1%;
+    justify-content: space-between;
+}
+.footer ul{
+display: flex;
+list-style: none;
+padding: 1% 6%;
+}
+.footer ul li#ext-link{
+    color: rgb(126, 117, 134);
+    font-weight: bold;
+}
+.footer ul li{
+    font-size: 13px;
+    padding: 12px;
+    color: rgb(126, 117, 134);
+}
+.left_footer p{
+    text-align: right;
+    font-size: 12px;
+    padding-right:50px;
+
+    line-height: 25px;
+    color: rgb(164, 150, 177);
+}
+.footer ul li:hover{
+    color: #02489e;
+    transition: 300ms ease-in-out;
+}
+@keyframes onHover {
+    0%{
+        left:-110%;
+        top: 90%;
+    }
+    50%{
+        left: 10%;
+        top: -30%;
+    }
+    100%{
+        top: -10%;
+        left: -10%;
+    }
+}
+
+@keyframes down{
+    from{
+    top: -10px;
+    opacity:0;
+    }
+    to{
+        top: 10px;
+        opacity:1;
+        }
+}
+@media only screen and (max-width:768px){
+    
+    nav h1 a, nav h1 a#chmh1, nav h1 a#phyh1, nav h1 a#gst, nav h1 a#cpeh1, nav h1 a#mthh1  {
+        font-size: 30px;
+    }
+ 
+
+    nav div h3{
+        padding-bottom: 10px;
+        padding-top: 15px;
+    }
+    .grid{
+        display:block;
+        padding: 5%;
+    }
+    .embed{
+        margin: 30px auto;
+    }
+    
+}
+@media only screen and (max-width:660px){
+    
+    nav h1 a, nav h1 a#chmh1, nav h1 a#phyh1, nav h1 a#gst, nav h1 a#cpeh1, nav h1 a#mthh1  {
+        font-size: 25px;
+        letter-spacing: 0px;
+    }
+}
+
+@media only screen and (max-width:550px){
+
+    nav div h3{
+        font-size: 18px;
+    }
+    nav div h1 a{
+        font-size: 29px;
+    }
+    nav div h1{
+        padding-top: 10px;
+    }
+    .outro .icons .btn{
+        height: 35px;
+        width: 35px;
+    }
+    .outro .icons i{
+        line-height: 35px;
+        padding-left: 6px;
+    }
+    nav ul.links li{
+        margin: auto 8px;
+    }
+
+    .outro h2{
+        font-size:22px;
+    }
+    
+    nav h1 a, nav h1 a#chmh1, nav h1 a#phyh1, nav h1 a#gst, nav h1 a#cpeh1, nav h1 a#mthh1  {
+        font-size: 20px;
+        letter-spacing: 0px;
+    }
+    nav ul.links li a{
+        font-size: 15px;
+    } 
+
+    
+}
+@media only screen and (max-width:450px){
+    nav{
+        max-width: calc(100% - 10%);
+    }
+
+    nav div h3{
+        font-size: 17px;
+    }
+    nav div h1 a{
+        font-size: 27px;
+    }
+    nav div h1{
+        padding-top: 10px;
+    }
+    nav ul.links li a{
+        font-size: 15px;
+    }
+    nav ul.links li{
+        margin: auto 6px;
+    }
+
+
+    .footer ul{
+        flex-direction: column;
+        padding: 0;
+        line-height: 0px;
+    }
+    .footer ul li{
+        font-size: 11px;
+    }
+    .footer .left_footer{
+        text-align: right;
+        align-self: flex-end;
+    }
+    .left_footer p{
+        padding-right: 10px;
+        font-size: 12px;
+    }
+    .outro .icons .btn{
+        height: 30px;
+        width: 30px;
+        margin-top: 20px;
+    }
+    .outro h1{
+        height: 30pt;
+        width: 85pt;
+    }
+    .outro .icons i{
+        line-height: 30px;
+        padding-left: 5px;
+        font-size: 15px;
+    }
+    .outro h2{
+        font-size:19px;
+    }
+}
+
+@media only screen and (max-width:380px){
+
+nav h1 a, nav h1 a#chmh1, nav h1 a#phyh1, nav h1 a#gst, nav h1 a#cpeh1, nav h1 a#mthh1  #mthh1{
+    font-size: 16px;
+}
+nav ul.links li a{
+    font-size: 12px;
+} 
+nav ul.links li{
+    padding: 0 2px 0 4px;
+    margin: 0 0px;
+    border-left :.5px solid white;
+}
+}
+
+
+
+@media only screen and (max-width:330px){
+    nav div h3{
+        font-size: 16px;
+    }
+    nav div h1 a{
+        font-size: 20px;
+    }
+    nav div h1{
+        padding-top: 5px;
+    }
+    nav{
+        max-width: calc(100% - 5%);
+    }
+
+    nav ul.links li a{
+        font-size: 13px;
+    }
+    nav ul.links li{
+        margin: auto 4px;
+    }
+    .outro h2{
+        font-size:18px;
+    }
+
+    .outro .icons .btn{
+        margin-right: 0;
+    }
+    nav ul.links li{
+        padding: 0 2px 0 3px;
+    }
+
+    
+    nav h1 a, nav h1 a#chmh1, nav h1 a#phyh1, nav h1 a#gst, nav h1 a#cpeh1, nav h1 a#mthh1  {
+        font-size: 14px;
+    }
+    nav ul.links li a{
+        font-size: 10px;
+    } 
+
+}
+@media only screen and (max-width:280px){
+    .outro h2{
+        font-size:16px;
+        margin-top: 20px;
+    }
+
+    .outro .icons .btn{
+        margin-right: 0;
+        margin-left: 2px;
+        
+    }
+    .footer ul li{
+        font-size: 11px;
+        line-height: 11px;
+    }
+
+        
+    nav h1 a, nav h1 a#chmh1, nav h1 a#phyh1, nav h1 a#gst, nav h1 a#cpeh1, nav h1 a#mthh1  {
+        font-size: 13px;
+    }
+    nav ul.links li a{
+        font-size: 10px;
+    } 
+}
+@keyframes fade{
+    0%{
+        opacity: .1;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 1;
+    }
